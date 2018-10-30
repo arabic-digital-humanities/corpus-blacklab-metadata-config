@@ -16,6 +16,9 @@ metadata:
     displayName: "Author Death AH"
     type: untokenized
     uiType: range
+  - name: Century
+    type: untokenized
+    uiType: select
   - name: School
     type: untokenized
     uiType: select
@@ -35,6 +38,7 @@ corpusConfig:
     - Author
     - Title
     - AuthorDIEDH
+    - Century
     - School
     - Geographical_area
   - name: Other Metadata
