@@ -13,12 +13,14 @@ metadata:
     type: untokenized
     uiType: select
   - name: AuthorDIEDH
+    displayName: "Author Death AH"
     type: untokenized
     uiType: range
   - name: School
     type: untokenized
     uiType: select
   - name: Geographical_area
+    displayName: "Geographical Area"
     type: untokenized
     uiType: select
 
