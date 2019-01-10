@@ -4,9 +4,9 @@ metadata:
   - forEachPath: meta
     namePath: "@name"
     valuePath: .
-  - name: BookTITLE
-    description: Title of the document
-    displayName: Title
+  - name: BookTITLE_SHORT
+    description: Short title of the document
+    displayName: "Short Title"
     type: untokenized
     uiType: select
   - name: AuthorNAME
