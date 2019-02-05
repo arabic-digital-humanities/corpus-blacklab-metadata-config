@@ -9,9 +9,18 @@ metadata:
     displayName: "Short Title"
     type: untokenized
     uiType: select
+  - name: BookTITLE
+    description: Full title of the document
+    displayName: "Full Title"
+    type: untokenized
+    uiType: select
   - name: AuthorNAME
     description: Author of the document
     displayName: Author
+    type: untokenized
+    uiType: select
+  - name: AuthorAKA
+    displayName: "Author AKA"
     type: untokenized
     uiType: select
   - name: AuthorDIEDH
