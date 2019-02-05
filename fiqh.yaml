@@ -33,6 +33,8 @@ metadata:
 # The settings in this block will be copied into indexmetadata.yaml
 # https://inl.github.io/BlackLab/how-to-configure-indexing.html#influence-index-metadata
 corpusConfig:
+  displayName: Fiqh                  # Corpus name to display in user interface
+  description: "More information can be found <a href='https://sensis.sites.uu.nl/digital-humanities/'>here</a>."  # Corpus description to display in user interface
   specialFields:
     titleField: BookTITLE_SHORT      # used to display document title in interface
     authorField: AuthorNAME          # used to display author in interface
