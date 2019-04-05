@@ -20,7 +20,7 @@ metadata:
     type: untokenized
     uiType: select
   - name: AuthorNAME_SHORT
-    displayName: "Short author name"
+    displayName: "Short Author Name"
     type: untokenized
     uiType: select
   - name: AuthorDIEDH
