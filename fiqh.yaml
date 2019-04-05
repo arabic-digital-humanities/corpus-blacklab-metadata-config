@@ -19,8 +19,8 @@ metadata:
     displayName: Author
     type: untokenized
     uiType: select
-  - name: AuthorAKA
-    displayName: "Author AKA"
+  - name: AuthorNAME_SHORT
+    displayName: "Short author name"
     type: untokenized
     uiType: select
   - name: AuthorDIEDH
@@ -46,14 +46,14 @@ corpusConfig:
   description: "More information can be found <a href='https://sensis.sites.uu.nl/digital-humanities/'>here</a>."  # Corpus description to display in user interface
   specialFields:
     titleField: BookTITLE_SHORT      # used to display document title in interface
-    authorField: AuthorAKA           # used to display author in interface
+    authorField: AuthorNAME_SHORT           # used to display author in interface
   textDirection: RTL
   contentViewable: true
   metadataFieldGroups:
   - name: Filters          # Text on tab, if there's more than one group
     fields:                # Metadata fields to display on this tab
     - BookTITLE_SHORT
-    - AuthorAKA
+    - AuthorNAME_SHORT
     - AuthorDIEDH
     - Century
     - BookSUBJ
