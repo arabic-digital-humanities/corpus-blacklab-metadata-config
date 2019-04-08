@@ -1,0 +1,66 @@
+metadataDefaultAnalyzer: nontokenizing
+metadata:
+  fields:
+  - forEachPath: meta
+    namePath: "@name"
+    valuePath: .
+  - name: Title
+    description: Title of the document
+    displayName: Title
+    type: untokenized
+    uiType: select
+  - name: Author
+    description: Author of the document
+    displayName: Author
+    type: untokenized
+    uiType: select
+  - name: Year
+    type: untokenized
+    uiType: select
+  - name: "Birth date"
+    displayName: "Author Year of Birth"
+    type: untokenized
+    uiType: range
+  - name: Deathdate
+    displayName: "Author Year of Death"
+    type: untokenized
+    uiType: range
+  - name: Editor
+    type: untokenized
+    uiType: select
+  - name: Publisher
+    type: untokenized
+    uiType: select
+  - name: Place
+    type: untokenized
+    uiType: select
+  - name: Country
+    type: untokenized
+    uiType: select
+
+
+# The settings in this block will be copied into indexmetadata.yaml
+# https://inl.github.io/BlackLab/how-to-configure-indexing.html#influence-index-metadata
+corpusConfig:
+  displayName: Dawa                  # Corpus name to display in user interface
+  description: "More information can be found <a href='https://sensis.sites.uu.nl/digital-humanities/'>here</a>."  # Corpus description to display in user interface
+  specialFields:
+    titleField: Title      # used to display document title in interface
+    authorField: Author           # used to display author in interface
+  textDirection: RTL
+  contentViewable: true
+  metadataFieldGroups:
+  - name: Filters          # Text on tab, if there's more than one group
+    fields:                # Metadata fields to display on this tab
+    - Title
+    - Author
+    - Year
+    - "Birth date"
+    - Deathdate
+    - Editor
+    - Publisher
+    - Place
+    - Country
+  - name: Other Metadata
+    addRemainingFields: true  # BLS will add any field not yet in
+                                # any group to this group
